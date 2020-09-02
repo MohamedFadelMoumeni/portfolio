@@ -58,7 +58,7 @@ box-shadow: 4px 4px 45px -15px rgba(0,0,0,0.75);
     font-family :'Roboto Mono', monospace;
     font-size: 2em;
     margin: 1em 0 0 0;
-    
+    overflow : hidden;
     white-space: nowrap;
     animation: 
     typing .5s steps(40, end),
@@ -67,7 +67,7 @@ box-shadow: 4px 4px 45px -15px rgba(0,0,0,0.75);
 .typed1 {
     margin: 0 auto;
     
-    width: 400px;
+    width: 430px;
 }
 .me-container{
     display: flex;
