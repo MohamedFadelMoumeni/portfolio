@@ -46,7 +46,7 @@ const english = [
     "HR FAQ",
     "Front end Developer",
     "About Me",
-    "My name is Mohamed Fadel, it's a pleasure to meet you. The purpose of this site is to serve as an extension to my resume, provide information to potential employers, while also demonstrating my web development skills. I made it because I am looking for a job at the moment. I believe it can save us some time on screening calls and even the actual interview.",
+    "My name is Mohamed Fadel,it's a pleasure to meet you.The purpose of this site is to serve as an extension to my resume,provide information to potential employers,while also demonstrating my web development skills.I made it because I am looking for a job at the moment.I believe it can save us some time on screening calls and even the actual interview.",
     "Skills",
     "Experience",
     "Front-end developer with primary focus on JS",
@@ -55,17 +55,17 @@ const english = [
     "For more projects please visit my Github",
     "Questions HR People Ask",
     "Basic information",
-    "Name: Mohamed Fadel Moumeni",
-    "Birthday: 25/01/2002",
-    "Nationality: Moroccoan",
-    "Study: Ibnou Zohr University",
-    "Languages: French/English/Arabic",
+    "Name:Mohamed Fadel Moumeni",
+    "Birthday:25/01/2002",
+    "Nationality:Moroccoan",
+    "Study:Ibnou Zohr University",
+    "Languages:French/English/Arabic",
     "Why have you decided to become a programmer?",
     " I always wanted to,have studied on my own, and I am ready.I like solving logical problems,working with things which follow rules,being able to make something valuable out of nothing.",
     "Which technologies do you want to work with?",
     " React and its ecosystem (Redux, etc), JavaScript everywhere,Node.js,Firebase .. etc",
     "How soon can you start?",
-    "Within 2 weeks after accepting an offer. Perhaps sooner. I'd like to start ASAP myself."
+    "Within 2 weeks after accepting an offer.Perhaps sooner.I'd like to start ASAP myself."
 ];
 
 function frenchStorage() {
