@@ -8,7 +8,7 @@ const answer3 = document.getElementById('q3-answer');
 const answer4 = document.getElementById('q4-answer');
 const language = document.getElementById('language');
 const switchElements = document.querySelectorAll('#switcher');
-let linkElement = ;
+let linkElement;
 function linkText(text){
       return linkElement.innerHTML = `<a href="https://github.com/MohamedFadelMoumeni">${text}</a>`;
 }
