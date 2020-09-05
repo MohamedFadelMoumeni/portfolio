@@ -9,7 +9,7 @@ const answer4 = document.getElementById('q4-answer');
 const language = document.getElementById('language');
 const switchElements = document.querySelectorAll('#switcher');
 const linkElement = document.createElement('a');
-linkEelement.src="https://github.com/MohamedFadelMoumeni";
+linkElement.src="https://github.com/MohamedFadelMoumeni";
 function linkText(text){
     return linkElement.textContent = text;
 }
