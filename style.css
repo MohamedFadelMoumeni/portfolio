@@ -13,20 +13,18 @@
     --text-color: #000;
     --border-bottom: rgb(29, 28, 28);
 }
-[data-theme="dark"] {
-    --background-color: rgb(255, 255, 255);
-    --color-bg : #fff;
-    --color: #000;
-    --background-container : rgb(0, 0, 0);
-    --background-shadow : rgba(0,0,0,0.75);
-    --border-bottom: rgb(29, 28, 28);
-    --text-color: #fff;
 
-}
 *{
     box-sizing: border-box;
 }
-
+a{
+    text-decoration: none;
+}
+.linkElement {
+    font-family :'Roboto Mono', monospace;
+    font-size: 2em;
+    
+}
 body{
     margin: 0;
     padding: 0;
