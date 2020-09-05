@@ -11,11 +11,7 @@
 a{
     text-decoration: none
 }
-.linkElement {
-     font-family :'Roboto Mono', monospace;
-    font-size: 2em;
-    text-decoration: none
-}
+
 body{
     margin: 0;
     padding: 0;
