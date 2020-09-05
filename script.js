@@ -9,7 +9,7 @@ const answer4 = document.getElementById('q4-answer');
 const language = document.getElementById('language');
 const switchElements = document.querySelectorAll('#switcher');
 function linkText(text){
-      let linkElement;
+      let linkElement = document.createElement('a');
       return linkElement.innerHTML = `<a href="https://github.com/MohamedFadelMoumeni">${text}</a>`;
 }
 let isFrench = false;
