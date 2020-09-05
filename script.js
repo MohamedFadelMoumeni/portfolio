@@ -8,11 +8,7 @@ const answer3 = document.getElementById('q3-answer');
 const answer4 = document.getElementById('q4-answer');
 const language = document.getElementById('language');
 const switchElements = document.querySelectorAll('#switcher');
-function linkText(text){
-      let linkElement = document.createElement('a');
-       linkElement.innerHTML = `<a href="https://github.com/MohamedFadelMoumeni">${text}</a>`;
-      return linkElement.textContent = text;
-}
+
 let isFrench = false;
 let langu;
 const french = [
@@ -28,7 +24,8 @@ const french = [
     "Développeur front-end avec un accent principal sur JS",
     "Penetration Testing",
     "Projets",
-    `Pour plus de projets, veuillez visiter mon Github ${linkText("ici")}`,
+    `Pour plus de projets, veuillez visiter mon Github`,
+      'ici',
     "Questions posées par les RH",
     "Informations de base",
     "Nom/prénom:Mohamed Fadel Moumeni",
@@ -58,6 +55,7 @@ const english = [
     "Penetration Testing",
     "Projects",
     `For more projects please visit my Github ${linkText("here")}`,
+      'here',
     "Questions HR People Ask",
     "Basic information",
     "Name:Mohamed Fadel Moumeni",
