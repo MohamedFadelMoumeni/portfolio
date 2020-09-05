@@ -10,7 +10,8 @@ const language = document.getElementById('language');
 const switchElements = document.querySelectorAll('#switcher');
 function linkText(text){
       let linkElement = document.createElement('a');
-      return linkElement.innerHTML = `<a href="https://github.com/MohamedFadelMoumeni">${text}</a>`;
+       linkElement.innerHTML = `<a href="https://github.com/MohamedFadelMoumeni">${text}</a>`;
+      return linkElement.textContent = text;
 }
 let isFrench = false;
 let langu;
