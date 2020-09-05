@@ -54,7 +54,7 @@ const english = [
     "Front-end developer with primary focus on JS",
     "Penetration Testing",
     "Projects",
-    `For more projects please visit my Github ${linkText("here")}`,
+    `For more projects please visit my Github `,
       'here',
     "Questions HR People Ask",
     "Basic information",
