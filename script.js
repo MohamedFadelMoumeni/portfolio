@@ -8,8 +8,8 @@ const answer3 = document.getElementById('q3-answer');
 const answer4 = document.getElementById('q4-answer');
 const language = document.getElementById('language');
 const switchElements = document.querySelectorAll('#switcher');
-let linkElement;
 function linkText(text){
+      let linkElement;
       return linkElement.innerHTML = `<a href="https://github.com/MohamedFadelMoumeni">${text}</a>`;
 }
 let isFrench = false;
