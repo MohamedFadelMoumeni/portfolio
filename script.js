@@ -8,6 +8,11 @@ const answer3 = document.getElementById('q3-answer');
 const answer4 = document.getElementById('q4-answer');
 const language = document.getElementById('language');
 const switchElements = document.querySelectorAll('#switcher');
+const linkElement = document.createElement('a');
+linkEelement.src="https://github.com/MohamedFadelMoumeni";
+function linkText(text){
+    return linkElement.textContent = text;
+}
 let isFrench = false;
 let langu;
 const french = [
@@ -24,6 +29,7 @@ const french = [
     "Penetration Testing",
     "Projets",
     "Pour plus de projets, veuillez visiter mon Github",
+    linkText("ici"),
     "Questions posées par les RH",
     "Informations de base",
     "Nom/prénom:Mohamed Fadel Moumeni",
@@ -53,6 +59,7 @@ const english = [
     "Penetration Testing",
     "Projects",
     "For more projects please visit my Github",
+    linkText("here"),
     "Questions HR People Ask",
     "Basic information",
     "Name:Mohamed Fadel Moumeni",
