@@ -11,7 +11,7 @@ const switchElements = document.querySelectorAll('#switcher');
 const linkElement = document.createElement('a');
 linkElement.src="https://github.com/MohamedFadelMoumeni";
 function linkText(text){
-     linkElement.textContent = text;
+     return linkElement.textContent = text;
 }
 let isFrench = false;
 let langu;
