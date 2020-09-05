@@ -11,7 +11,7 @@ const switchElements = document.querySelectorAll('#switcher');
 const linkElement = document.createElement('a');
 linkElement.src="https://github.com/MohamedFadelMoumeni";
 function linkText(text){
-    return linkElement.textContent = text;
+     linkElement.textContent = text;
 }
 let isFrench = false;
 let langu;
@@ -28,8 +28,7 @@ const french = [
     "Développeur front-end avec un accent principal sur JS",
     "Penetration Testing",
     "Projets",
-    "Pour plus de projets, veuillez visiter mon Github",
-    linkText("ici"),
+    `Pour plus de projets, veuillez visiter mon Github ${linkText("ici")}`,
     "Questions posées par les RH",
     "Informations de base",
     "Nom/prénom:Mohamed Fadel Moumeni",
@@ -58,8 +57,7 @@ const english = [
     "Front-end developer with primary focus on JS",
     "Penetration Testing",
     "Projects",
-    "For more projects please visit my Github",
-    linkText("here"),
+    `For more projects please visit my Github ${linkText("here")}`,
     "Questions HR People Ask",
     "Basic information",
     "Name:Mohamed Fadel Moumeni",
