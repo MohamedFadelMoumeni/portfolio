@@ -391,6 +391,14 @@ align-items: center;
       margin-left: 1.5em;
 
   }
+  #footer-text {
+      text-align: center;
+      color: whitesmoke;
+      font-family: 'Roboto Mono', monospace;
+  }
+  .heart-icon {
+      color: red;
+  }
 
 @media screen and (max-width: 722px){
     .me-container {
