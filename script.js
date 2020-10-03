@@ -246,7 +246,7 @@ window.addEventListener('click', (e) => {
 infoIcon[0].addEventListener('click', () => {
     styleStarted(false);
     infoText.textContent = "AI Pack";
-    modalImg.src = "../images/models.jpg";
+    modalImg.src = "images/models.jpg";
     contentModal.textContent = "AI Pack using VanillaJS/Browserify/RestfulAPI";
     createElementforModal("h4", AiFeature, contentModal);
 
@@ -255,7 +255,7 @@ infoIcon[0].addEventListener('click', () => {
 infoIcon[1].addEventListener('click', () => {
     styleStarted(false);
     infoText.textContent = "Php Mvc Framework";
-    modalImg.src = "/images/p2.png";
+    modalImg.src = "images/p2.png";
     contentModal.textContent = "PHP Mvc Framework for beginners";
     createElementforModal("h4", phpFeature, contentModal);
 
@@ -264,7 +264,7 @@ infoIcon[1].addEventListener('click', () => {
 infoIcon[2].addEventListener('click', () => {
     styleStarted(false);
     infoText.textContent = "Admin Dashboard";
-    modalImg.src = "/images/p3.jpg";
+    modalImg.src = "images/p3.jpg";
     contentModal.textContent = "Simple Admin Dashboard using Bootsrap/jQuery";
     createElementforModal("h4", AdminFeature, contentModal);
 
@@ -273,7 +273,7 @@ infoIcon[2].addEventListener('click', () => {
 infoIcon[3].addEventListener('click', () => {
     styleStarted(false);
     infoText.textContent = "Face Recognation App";
-    modalImg.src = "/images/p4.jpg";
+    modalImg.src = "images/p4.jpg";
     contentModal.textContent = "Face Recognation App using React";
     createElementforModal("h4", FaceFeature, contentModal);
 
@@ -282,7 +282,7 @@ infoIcon[3].addEventListener('click', () => {
 infoIcon[4].addEventListener('click', () => {
     styleStarted(false);
     infoText.textContent = "Book Store";
-    modalImg.src = "/images/p5.jpg";
+    modalImg.src = "images/p5.jpg";
     contentModal.textContent = "Simple Book Store website";
     createElementforModal("h4", ReadFeature, contentModal);
 
