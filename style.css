@@ -17,7 +17,7 @@ a{
 }
 .linkElement {
     font-family: 'Roboto Mono', monospace;
-
+    text-decoration: underline;
     font-size: 1.2em;
     margin-left: 1em;
 }
@@ -293,6 +293,7 @@ align-items: center;
 .ps-details {
     text-align: center;
     font-family :'Roboto Mono', monospace;
+  
 
 }
 .card:hover {
@@ -390,6 +391,18 @@ align-items: center;
       font-size: 20px;
       margin-left: 1.5em;
 
+  }
+  .bootstrap {
+      color: rgb(143, 8, 91);
+  }
+  .javascript {
+      color: rgb(216, 216, 9);
+  }
+  .php {
+      color: rgb(137, 130, 240);
+  }
+  .react {
+    color: rgb(99, 88, 250);
   }
   #footer-text {
       text-align: center;
