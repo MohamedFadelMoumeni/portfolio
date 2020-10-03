@@ -246,7 +246,7 @@ window.addEventListener('click', (e) => {
 infoIcon[0].addEventListener('click', () => {
     styleStarted(false);
     infoText.textContent = "AI Pack";
-    modalImg.src = "/images/models.jpg";
+    modalImg.src = "../images/models.jpg";
     contentModal.textContent = "AI Pack using VanillaJS/Browserify/RestfulAPI";
     createElementforModal("h4", AiFeature, contentModal);
 
