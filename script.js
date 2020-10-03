@@ -8,9 +8,48 @@ const answer3 = document.getElementById('q3-answer');
 const answer4 = document.getElementById('q4-answer');
 const language = document.getElementById('language');
 const switchElements = document.querySelectorAll('#switcher');
-
+const modal = document.getElementById('modal');
+const modalClose = document.getElementById('close-modal');
+const infoIcon = document.querySelectorAll('#info-icon');
+const infoText = document.getElementById('info-text');
+const contentModal = document.getElementById('content-info');
+const modalImg = document.getElementById('modal-img');
 let isFrench = false;
 let langu;
+const AiFeature = ["- Face Detection", "- Celebrity Detection", "- Demographics Detection"];
+const phpFeature = ["- Free to use", "- Built using MVC/OOP", "- Open Source"];
+const AdminFeature = ["- Html/Css/Bootstrap/jQuery", "- Open Source"];
+const FaceFeature = ["- ReactJs/MaterialUI", "- Machine Learning", "- Open Source"];
+const ReadFeature = ["- Html/Css/Bootstrap/jQuery", "- Open Source"];
+
+function styleStarted(bool) {
+    bool ? contentModal.classList.add('started') : contentModal.classList.remove('started');
+}
+
+function createElementforModal(element, arrayText, appEndElement) {
+
+    for (var i = 0; i < arrayText.length; i++) {
+        const elementCreated = document.createElement(`${element}`);
+        elementCreated.textContent = arrayText[i];
+        appEndElement.appendChild(elementCreated);
+
+    }
+
+}
+
+
+// Close Modal 
+function closeModal() {
+    modal.classList.remove('show-modal');
+}
+//Show Modal 
+function showModal() {
+    modal.classList.add('show-modal');
+}
+
+
+
+
 const french = [
     "Bonjour , je suis Mohamed",
     "Acceuil",
@@ -198,3 +237,62 @@ const currentLang = localStorage.getItem('language');
 if (currentLang) {
     switchLanguage(currentLang);
 }
+modalClose.addEventListener('click', () => {
+    closeModal();
+})
+window.addEventListener('click', (e) => {
+    e.target === modal ? closeModal() : false;
+});
+infoIcon[0].addEventListener('click', () => {
+    styleStarted(false);
+    infoText.textContent = "AI Pack";
+    modalImg.src = "/images/models.jpg";
+    contentModal.textContent = "AI Pack using VanillaJS/Browserify/RestfulAPI";
+    createElementforModal("h4", AiFeature, contentModal);
+
+    showModal();
+})
+infoIcon[1].addEventListener('click', () => {
+    styleStarted(false);
+    infoText.textContent = "Php Mvc Framework";
+    modalImg.src = "/images/p2.png";
+    contentModal.textContent = "PHP Mvc Framework for beginners";
+    createElementforModal("h4", phpFeature, contentModal);
+
+    showModal();
+})
+infoIcon[2].addEventListener('click', () => {
+    styleStarted(false);
+    infoText.textContent = "Admin Dashboard";
+    modalImg.src = "/images/p3.jpg";
+    contentModal.textContent = "Simple Admin Dashboard using Bootsrap/jQuery";
+    createElementforModal("h4", AdminFeature, contentModal);
+
+    showModal();
+})
+infoIcon[3].addEventListener('click', () => {
+    styleStarted(false);
+    infoText.textContent = "Face Recognation App";
+    modalImg.src = "/images/p4.jpg";
+    contentModal.textContent = "Face Recognation App using React";
+    createElementforModal("h4", FaceFeature, contentModal);
+
+    showModal();
+})
+infoIcon[4].addEventListener('click', () => {
+    styleStarted(false);
+    infoText.textContent = "Book Store";
+    modalImg.src = "/images/p5.jpg";
+    contentModal.textContent = "Simple Book Store website";
+    createElementforModal("h4", ReadFeature, contentModal);
+
+    showModal();
+});
+
+function startingModal() {
+    styleStarted(true);
+    infoText.textContent = "Welcome";
+    contentModal.innerHTML = "If you’re reading this… Congratulations, you’re alive. If that’s not something to smile about, then I don’t know what is ";
+    showModal();
+}
+startingModal();
