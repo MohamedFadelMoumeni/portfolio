@@ -298,7 +298,8 @@ align-items: center;
 
 }
 .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 8px 20px 0 rgb(36, 36, 36);
+    transform: translateY(-20px);
   }
   .alert {
       margin-top: 2em;
@@ -545,6 +546,7 @@ align-items: center;
     } 
     .card {
         width: 100%;
+        transition: all .5;
         margin: 1em 0;
     }  
     .experience-paragraph {
